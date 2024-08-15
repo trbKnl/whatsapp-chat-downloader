@@ -9,3 +9,16 @@ This PoC relies on:
     * [Puppeteer](https://pptr.dev/)
 * [Vue](https://vuejs.org/)
 
+## Run with docker 
+
+Build:
+
+```
+docker build . --build-arg="DOMAIN_NAME=http://localhost:3000" -t whatsapp:latest
+```
+
+Run:
+
+```
+docker run -p 3000:3000 whatsapp:latest
+```
